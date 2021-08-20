@@ -8,7 +8,7 @@
 ### 2. ESLint
 
 * Install `npm install -D eslint@7.18.0 eslint-config-prettier@8.1.0`
-* Create .eslintrc.json with `"lint": "eslint \"src/**/*.{js, jsx}\" --quiet"`
+* Create .eslintrc.json with below code
 ```
   {
     "extends": ["eslint:recommended", "prettier"],
@@ -27,7 +27,22 @@
     }
   }
 ```
-* Update package.json >> script with ``
+* Update package.json >> script with `"lint": "eslint \"src/**/*.{js, jsx}\" --quiet"`
+
+### 3. ESLint
+
+* Initiate `git init`
+* Create .gitignore
+
+```
+node_modules/
+.cache/
+dist/
+.env
+.DS_Store
+coverage/
+```
+
 
 
 
