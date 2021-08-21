@@ -98,7 +98,7 @@ coverage/
 ### 7. React Class Babel (Optional)
 
 * Install `npm i -D @babel/plugin-proposal-class-properties@7.13.0 @babel/preset-env@7.13.5 @babel/eslint-parser@7.13.4`
-* Add in `.babelrc`
+* Add in `.babelrc` && `.eslintrc.json`
 ```
 {
   "presets": [
@@ -113,6 +113,42 @@ coverage/
   "plugins" : [
     "@babel/plugin-proposal-class-properties"
   ]
+}
+```
+
+```
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 0
+  },
+  "plugins": ["react", "import", "jsx-a11y"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "react" : {
+      "version": "detect"
+    }
+  }
 }
 ```
 
