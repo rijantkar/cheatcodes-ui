@@ -100,9 +100,20 @@ coverage/
 * Install `npm i -D @babel/plugin-proposal-class-properties@7.13.0 @babel/preset-env@7.13.5 @babel/eslint-parser@7.13.4`
 * Add in `.babelrc`
 ```
-"plugins" : [
-  "@babel/plugin-proposal-class-properties"
-]
+{
+  "presets": [
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ],
+    "@babel/preset-env"
+  ],
+  "plugins" : [
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
 ```
 
 
