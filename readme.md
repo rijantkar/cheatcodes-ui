@@ -91,5 +91,10 @@ coverage/
   ]
 ```
 
+### 6. ReactRouter
+
+* Install `npm install react-router-dom@5.2.0`
+  
+
 
 
