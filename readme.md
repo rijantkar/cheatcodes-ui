@@ -1,3 +1,6 @@
+### React 
+`npm install react@17.0.1 react-dom@17.0.1`
+
 ### 1. Prettier
 
 * Install `npm install -D prettier`
@@ -29,7 +32,7 @@
 ```
 * Update package.json >> script with `"lint": "eslint \"src/**/*.{js, jsx}\" --quiet"`
 
-### 3. ESLint
+### 3. Git
 
 * Initiate `git init`
 * Create .gitignore
@@ -43,6 +46,33 @@ dist/
 coverage/
 ```
 
+### 4. Parcel
+
+* Install `npm install -D parcel@1.12.3`
+
+### 5. Babel
+
+* Add .babelrc
+```
+{
+  "presets": [
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ]
+  ]
+}
+```
+* Install `npm install -D @babel/core@7.12.16 @babel/preset-react@7.12.13`
+* Target browsers in package.json
+
+```
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
+```
 
 
 
