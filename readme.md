@@ -94,7 +94,16 @@ coverage/
 ### 6. ReactRouter
 
 * Install `npm install react-router-dom@5.2.0`
-  
+
+### 7. React Class Babel (Optional)
+
+* Install `npm i -D @babel/plugin-proposal-class-properties@7.13.0 @babel/preset-env@7.13.5 @babel/eslint-parser@7.13.4`
+* Add in `.babelrc`
+```
+"plugins" : [
+  "@babel/plugin-proposal-class-properties"
+]
+```
 
 
 
