@@ -95,7 +95,45 @@ coverage/
 
 * Install `npm install react-router-dom@5.2.0`
 
-### 7. React Class Babel (Optional)
+### 7. Jest/testing Library
+
+* Install `npm install -D jest@26.6.3 @testing-library/react@11.2.5`
+```
+  {
+    "presets": [
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ],
+      "@babel/preset-env"
+    ],
+    "plugins": ["@babel/plugin-proposal-class-properties"],
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "targets": {
+                "node": "current"
+              }
+            }
+          ]
+        ]
+      }
+    }
+  }
+```
+
+* Update `package.json` scripts
+```
+  "test": "jest",
+  "test:watch": "jest --watch"
+```
+
+### 8. React Class Babel (Optional)
 
 * Install `npm i -D @babel/plugin-proposal-class-properties@7.13.0 @babel/preset-env@7.13.5 @babel/eslint-parser@7.13.4`
 * Add in `.babelrc` && `.eslintrc.json`
