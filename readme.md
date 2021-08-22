@@ -97,7 +97,7 @@ coverage/
 
 ### 7. Jest/testing Library
 
-* Install `npm install -D jest@26.6.3 @testing-library/react@11.2.5`
+* Install `npm install -D jest@26.6.3 @testing-library/react@11.2.5 @testing-library/react-hooks@5.1.0`
 ```
   {
     "presets": [
